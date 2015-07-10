@@ -1,0 +1,16 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: LightGrey;
+  background-color: #003366;
+}
+
+a {
+  color: #00B7FF;
+}
+
+h1 {
+	color: white;
+	font-family: Georgia, serif;
+	font-size: 100px;
+}

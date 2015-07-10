@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Admitt File Manager</title>
+
+	<!-- <link rel="stylesheet" href="stylesheets/style.css"> -->
+</head>
+<body ng-app="AdmittApp">
+
+	<div class="header">
+		<div class="container">
+			<h1> File Manager </h1>
+		</div>
+	</div>
+
+	<div class="main" ng-controller="MainController">
+		<div class="container">
+			<!-- rendering example text from controller scope, not working :( -->
+			<h2> {{ exampleText }} <h2>
+
+			<form action="/upload" enctype="multipart/form-data", method="post">
+				<input type="file" name="upload" multiple="multiple">
+				<input type="submit" value="Upload File">
+			</form>
+
+			<form action="/show">
+				<button type="submit"> Show files </button>
+			</form>
+
+			<!-- using a directive, not working :( -->
+			<showFiles />
+		</div>
+	</div>
+
+
+	<!-- angular files -->
+	<script src="shared/angular.min.js"></script>
+	<!-- directives: -->
+	<script src="directives/showFiles.js"></script>
+</body>
+</html>
