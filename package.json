@@ -6,7 +6,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/cdkavour/fileManager2.git"
+    "url": "https://github.com/cdkavour/fileManager2.git"
   },
   "scripts": {
     "start": "nodemon server.js"
